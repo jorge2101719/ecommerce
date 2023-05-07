@@ -8,8 +8,8 @@ header {
 
 menu {
     grid-area: menu;
-    display: flex;
-    flex-direction: column;
+    display: flex; /* se define el menu como elemento flex*/
+    flex-direction: column; /* necesario para despliegue en eje vertical */
 }
 
 main {
@@ -23,6 +23,7 @@ footer {
     background-color: white;
 }
 
+/* use de grid areas para la vista*/
 .grid-container {
     display: grid;
     grid-template-areas: 
@@ -32,6 +33,11 @@ footer {
     gap: .5rem;
     background-color: cyan;
     min-height: 100vh;
+}
+
+/* clase para modificar la apariencia de los números que indican cantidad de productos */
+.cantidad {
+    color: grey;
 }
 
 main {
