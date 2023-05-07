@@ -47,9 +47,10 @@ main {
     text-align: center;
 }
 
-img {
+.card img {
     width: 100%;
     text-align: center;
+    object-fit: cover;
 }
 
 button {
