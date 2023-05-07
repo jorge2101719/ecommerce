@@ -61,10 +61,13 @@ footer {
     flex-direction: column;
     align-items: center;
     background-color: white;
-    width: 100%;
-
+    /* se agrega efecto de sombra, para dar estilo personal */
+    -webkit-box-shadow: 15px -4px 24px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 15px -4px 24px -10px rgba(0,0,0,0.75);
+    box-shadow: 15px -4px 24px -10px rgba(0,0,0,0.75);
 }
-
+    
+    /* ayuda a que las tarjetas tengan las mismas dimensiones */
 .card-body {
     flex-grow: 1;
 }
