@@ -4,8 +4,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
-/* definiciones y estilos de los elementos de la vista */
+/* definiciones y estilos de los elementos de la vista, para cumplir con el punto 1 del desafío */
 header {
     grid-area: header;
     background-color: blue;
@@ -20,10 +19,11 @@ menu {
     flex-direction: column; /* necesario para despliegue en eje vertical */
 }
 
-/* definición de la parte principal del documento con display: grid, contenedor de una galeria: puntos 2 del desafío */
+/* definición de la parte principal del documento con display: grid, contenedor de una galeria */
+/* para cumplir con el punto 2 del desafío */
 main {
     grid-area: main;
-    display: grid;
+    display: grid; /* uso del grid */
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem; 
     justify-items: center;
@@ -37,9 +37,10 @@ footer {
     background-color: white;
 }
 
-/* use de grid areas para la vista según punto 1 del desafío*/
+/* use de grid areas para la vista según punto 1 del desafío */
 .grid-container {
     display: grid;
+    /* uso de areas, según punto 1 del desafío */
     grid-template-areas: 
     "header header header header header header"
     "menu main main main main main"
@@ -55,7 +56,7 @@ footer {
 }
 
 
-/*  */
+/* definición general de la tarjeta */
 .card {
     display: flex; /* construcción de tarjetas con flex. Punto 4 del desafío*/
     flex-direction: column;
@@ -67,7 +68,7 @@ footer {
     -moz-box-shadow: 10px 10px 37px -1px rgba(0,0,0,0.75);
 }
     
-    /* ayuda a que las tarjetas tengan las mismas dimensiones */
+/* ayuda a que las tarjetas tengan las mismas dimensiones */
 .card-body {
     flex-grow: 1;
 }
