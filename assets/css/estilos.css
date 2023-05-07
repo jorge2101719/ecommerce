@@ -1,3 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* definiciones y estilos de los elementos de la vista */
 header {
     grid-area: header;
     background-color: blue;
@@ -8,12 +16,18 @@ header {
 
 menu {
     grid-area: menu;
-    display: flex; /* se define el menu como elemento flex*/
+    display: flex; /* se define el menu como elemento flex de la barra lateral. Punto 3 del desafío*/
     flex-direction: column; /* necesario para despliegue en eje vertical */
 }
 
+/* definición de la parte principal del documento con display: grid, contenedor de una galeria: puntos 2 del desafío */
 main {
     grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem; 
+    justify-items: center;
+    padding: 1%;
 }
 
 footer {
@@ -23,7 +37,7 @@ footer {
     background-color: white;
 }
 
-/* use de grid areas para la vista*/
+/* use de grid areas para la vista según punto 1 del desafío*/
 .grid-container {
     display: grid;
     grid-template-areas: 
@@ -31,7 +45,7 @@ footer {
     "menu main main main main main"
     "footer footer footer footer footer footer";
     gap: .5rem;
-    background-color: cyan;
+    background-color: violet;
     min-height: 100vh;
 }
 
@@ -40,23 +54,24 @@ footer {
     color: grey;
 }
 
-main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem; 
-    justify-items: center;
-    padding: 1%;
-}
 
+/*  */
 .card {
+    display: flex; /* construcción de tarjetas con flex. Punto 4 del desafío*/
+    flex-direction: column;
+    background-color: white;
     width: 100%;
     text-align: center;
+}
+
+.card-body {
+    flex-grow: 1;
 }
 
 .card img {
     width: 100%;
     text-align: center;
-    object-fit: cover;
+    object-fit: cover; /* propiedad para mejorar la visión de las imagenes */
 }
 
 button {
