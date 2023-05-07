@@ -1,0 +1,61 @@
+header {
+    grid-area: header;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    padding: 1%;
+}
+
+menu {
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 1%;
+    background-color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header header header header header"
+    "menu main main main main main"
+    "footer footer footer footer footer footer";
+    gap: .5rem;
+    background-color: cyan;
+    min-height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem; 
+    justify-items: center;
+    padding: 1%;
+}
+
+.card {
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 1%;
+    border: 0;
+}
